@@ -16,5 +16,6 @@
     <string-array name="image_class">
         <item>Birds</item>
         <item>Food</item>
+        <item>Objects</item>
     </string-array>
 </resources>
