@@ -2,8 +2,8 @@
     <string name="app_name">MLbucket</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">MLbucket</string>
+    <string name="nav_header_subtitle">ML models at your fingertips!!</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
@@ -12,4 +12,9 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="Image_Classification">Image Classification</string>
     <string name="Text_Classification">Text Models</string>
+    <string name="pick_image">Pick Image</string>
+    <string-array name="image_class">
+        <item>Birds</item>
+        <item>Food</item>
+    </string-array>
 </resources>

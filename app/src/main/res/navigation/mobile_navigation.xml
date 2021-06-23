@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/image_classification"
-        android:name="jacs.apps.mlbucket.ui.slideshow.SlideshowFragment"
+        android:name="jacs.apps.mlbucket.ui.image_classification.ImageClassificationFragment"
         android:label="@string/Image_Classification"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_image_classification" />
 
     <fragment
         android:id="@+id/text_classification"
-        android:name="jacs.apps.mlbucket.ui.gallery.GalleryFragment"
+        android:name="jacs.apps.mlbucket.ui.text.TextFragment"
         android:label="@string/Text_Classification"
         tools:layout="@layout/fragment_gallery" />
 

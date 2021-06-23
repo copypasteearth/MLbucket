@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progressView1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progressView_autoAnimate="true"
+        app:progressView_colorBackground="@color/white"
+        app:progressView_colorProgress="@color/blueish"
+        app:progressView_colorGradientStart="@color/blueish"
+        app:progressView_colorGradientEnd="@color/green"
+        app:progressView_labelColorInner="@color/white"
+        app:progressView_labelColorOuter="@color/black"
+        app:progressView_labelSize="13sp"
+        app:progressView_labelSpace="10dp"
+        app:progressView_labelText=""
+        app:progressView_labelTypeface="bold"
+        app:progressView_max="1"
+        app:progressView_min="0"
+        app:progressView_padding="1dp"
+        app:progressView_progress="40"
+        app:progressView_progressFromPrevious="true"
+        app:progressView_radius="12dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
