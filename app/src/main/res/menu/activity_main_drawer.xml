@@ -13,6 +13,10 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/Image_Classification" />
         <item
+            android:id="@+id/audio_models"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/audio_models"/>
+        <item
             android:id="@+id/text_classification"
             android:icon="@android:drawable/ic_menu_edit"
             android:title="@string/Text_Classification" />

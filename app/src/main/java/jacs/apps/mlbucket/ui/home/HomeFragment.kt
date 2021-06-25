@@ -1,5 +1,6 @@
 package jacs.apps.mlbucket.ui.home
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -30,11 +31,22 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        var fancyAboutPage = binding.fancyAboutPage;
+        fancyAboutPage.setCover(R.drawable.ai); //Pass your cover image
+        fancyAboutPage.setName("John P. Rowan III");
+        fancyAboutPage.setDescription("Android Developer for jacs@pps. Loves coding and keeping up with Android OS");
+        fancyAboutPage.setAppIcon(R.drawable.icon); //Pass your app icon image
+        fancyAboutPage.setAppName("MLbucket");
+        fancyAboutPage.setVersionNameAsAppSubTitle("1.0.0");
+        fancyAboutPage.setAppDescription("MLbucket is an app where I am gathering a bunch of different Machine Learning models and running them inside the app.");
+        fancyAboutPage.findViewById<TextView>(R.id.appdescription).setTextColor(Color.BLACK)
+        fancyAboutPage.addEmailLink("copypasteearth@gmail.com");     //Add your email id
+        fancyAboutPage.addFacebookLink("https://www.facebook.com/copypasteearth");  //Add your facebook address url
+        fancyAboutPage.addTwitterLink("https://twitter.com/Copypasteearth");
+        fancyAboutPage.addLinkedinLink("https://www.linkedin.com/in/john-rowan-876115119/");
+        fancyAboutPage.addGitHubLink("https://github.com/copypasteearth");
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
         return root
     }
 

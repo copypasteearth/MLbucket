@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="jacs.apps.mlbucket.ui.audio.SingingFragment">
+
+    <data>
+
+        <variable
+            name="viewModelxml"
+            type="jacs.apps.mlbucket.ui.audio.SingingFragmentViewModel" />
+
+    </data>
+
+    <ScrollView
+        android:id="@+id/scrollViewFirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00E5FF">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00E5FF">
+
+            <TextView
+                android:id="@+id/textviewKaraoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:text="@{viewModelxml.spannableForKaraoke}"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@id/buttonForSinging"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewKaraoke" />
+
+            <ImageButton
+                android:id="@+id/buttonAnimated"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:foreground="@drawable/ic_shark"
+                android:text="@string/next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/buttonForSinging" />
+
+            <ImageButton
+                android:id="@+id/buttonForSinging"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:text="@string/next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewKaraoke" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="@dimen/webViewWidth"
+                android:layout_height="@dimen/webViewHeight"
+                android:layout_marginStart="@dimen/webViewMargin"
+                android:layout_marginEnd="@dimen/webViewMargin"
+                android:layout_marginBottom="@dimen/webViewMargin"
+                android:textColor="#000"
+                android:textIsSelectable="true"
+                android:textSize="18sp"
+                app:htmlToScreen="@{viewModelxml.inputTextFromAssets}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewHertz" />
+
+            <TextView
+                android:id="@+id/textviewHertz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="22dp"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonForSinging"
+                app:noteArrayListToString="@{viewModelxml.noteValuesToDisplay}" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="32dp"
+                android:textColor="#fff"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/webView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

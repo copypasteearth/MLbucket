@@ -13,6 +13,21 @@
     <string name="Image_Classification">Image Classification</string>
     <string name="Text_Classification">Text Models</string>
     <string name="pick_image">Pick Image</string>
+    <string name="audio_models">Audio Models</string>
+    <string name="record_audio">Record Audio</string>
+    <string name="stop">Stop</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Start singing</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="song_lyrics_baby">\'Press the button and grab the mic and sing your best song, make it so good that it is fun the whole time you are singing\'</string>
+    <string name="song_lyrics_mummy">\'Keep singing or playing music. Notice that the ml model is classifying your tones into the right notes that you are making.\'</string>
+    <string name="allPermissionsGranted">All permissions are granted!</string>
+    <string name="permissionsNotGranted">All permissions are mandatory for app to work properly!</string>
     <string-array name="image_class">
         <item>Birds</item>
         <item>Food</item>

@@ -11,6 +11,11 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/audio_models"
+        android:name="jacs.apps.mlbucket.ui.audio.SingingFragment"
+        android:label="@string/audio_models"
+        tools:layout="@layout/fragment_first"/>
+    <fragment
         android:id="@+id/image_classification"
         android:name="jacs.apps.mlbucket.ui.image_classification.ImageClassificationFragment"
         android:label="@string/Image_Classification"
