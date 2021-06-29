@@ -70,6 +70,7 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly'
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
     implementation 'com.github.Shashank02051997:FancyAboutPage-Android:2.6'
+    implementation 'com.github.copypasteearth:KotlinWikipediaSearch:1.0.0'
 
 
 
